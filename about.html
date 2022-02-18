@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Tech Overtaker_About</title>
+</head>
+<style>
+    .container {
+      border-top: 12px solid #2a58a3;
+      margin-top: 20px;
+      margin-left: 30px;
+      padding-top: 20px;
+      line-height: 25px;
+      width: 400px;
+      display: block;
+      float: left;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .about_para{
+      text-align: justify;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    @media screen and (max-width: 400px) {
+      .container{
+        box-shadow: none;
+        width: 90%;
+      }
+    }
+    @media screen and (max-width: 800px) {
+      .container{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    @media screen and (min-width: 958px){
+      .container{
+        width: 630px;
+      }
+    }
+  .profile_column {
+  float: left;
+  width: 100%;
+  display: block;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.profile_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.row{
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profile_container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.profile_title {
+  color: grey;
+  margin: 0 auto;
+}
+</style>
+<body>
+    <!-- Navigation Bar -->
+  <div class="content_on_img">
+    <div class="topnav" id="myTopnav">
+      <img class="logo" style="height: 47px; float: right;" src="logo2.png" alt="logo">
+      <a href="index.html">Home</a>
+      <a href="https://www.youtube.com/channel/UCWsod3XQhODKQ32EnFenl8w/videos" target="_blank">Videos</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html" class="active">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction(); myOc()">
+        <i class="fas fa-ellipsis-v"></i>
+      </a>
+    </div>
+
+    <!-- Quote -->
+    <h1 class="quote" id="quote"
+      style="font-family: 'Ubuntu', sans-serif; text-align: center; margin-top: 29px; color: #ffffff;">Go
+        Farther With Tech Overtaker</h1>
+  </div>
+   
+  <div class="container">
+      <h1 style="text-align: center;">ABOUT</h1>
+      <p class="about_para">&nbsp; &nbsp; On this website you will get articles on How to, related to Technology, Android Tips and Tricks, Windows Tips and Tricks. I started this website on 01/February/2022. My Youtube channel is also there named <a href="https://www.youtube.com/channel/UCWsod3XQhODKQ32EnFenl8w" target="_BLANK"><span style="color: #2a58a3;">"Tech Overtaker"</span></a>. I don't have any team. I write content and code alone. It is very difficult to manage all this alone. I literally spent my whole day in coding and writing all this content. But many people if you have passion you can do any thing. Same thing with me.</p>
+      <div class="row">
+        <div class="profile_column">
+          <div class="profile_card">
+            <img src="ronak.jpg" alt="Jane" style="width:200px; padding-top: 20px;">
+            <div class="peofile_container">
+              <h2>Ronak Gaikar</h2>
+              <p class="profile_title">CEO & Founder</p>
+              <p style="padding-bottom: 20px;">ronakgaikar@gmail4.com</p>
+            </div>
+          </div>
+        </div>
+  </div>
+  <script>
+    // Function for Responsive Navigation Bar
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+    function myOc() {
+      var x = document.getElementById("quote");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+.content_on_img{
+    /* background-image: url('background_img .jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    height: 166px;
+    padding-top: 2.5px;
+  /* fallback for old browsers */
+  background: #667eea;
+  padding-top: 2.5px;
+  height: 77px;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to left, rgba(102, 126, 234, 1), rgba(66, 11, 122, 1));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, rgba(102, 126, 234, 1), rgba(66, 11, 122, 1))
+}
+
+#quote {
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    margin-top: -11px;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+.mystyle {
+  height: 195px;
+}
+</style>
+</head>
+<body>
+  <div id="coi" class="content_on_img">
+    <div class="topnav" id="myTopnav">
+      <img class="logo" style="height: 47px; float: right;" src="logo2.png" alt="logo">
+      <a href="index.html" class="active">Home</a>
+      <a href="https://www.youtube.com/channel/UCWsod3XQhODKQ32EnFenl8w/videos" target="_blank">Videos</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction(); myOc(); myTunction()">
+        <i class="fas fa-ellipsis-v"></i>
+      </a>
+    </div>
+
+    <h1 class="quote" id="quote"
+      style="font-family: 'Ubuntu', sans-serif; text-align: center; margin-top: 29px; color: #ffffff;">Go
+        Farther With Tech Overtaker</h1>
+  </div>
+<!-- <p>Click the "Try it" button to toggle between adding and removing the "mystyle" class name of the DIV element:</p>
+
+<button onclick="myTunction()">Try it</button>
+
+<div id="myDIV">
+This is a DIV element.
+</div> -->
+
+<script>
+function myTunction() {
+   var element = document.getElementById("coi");
+   element.classList.toggle("mystyle");
+}
+function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+    function myOc() {
+      var x = document.getElementById("quote");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+</script>
+
+</body>
+</html>
+
